@@ -1,0 +1,32 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.close-btn {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 10pt;
+    -fx-background-color: transparent;
+    -fx-border-radius: 0;
+    -fx-max-width: 30px;
+    -fx-max-height: 30px;
+    -fx-min-width: 30px;
+    -fx-min-height: 30px;
+    -fx-alignment: center;
+}
+
+.close-btn:hover {
+	-fx-background-color: #FF4040;
+}
+
+.min-btn {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 10pt;
+    -fx-background-color: transparent;
+    -fx-border-radius: 0;
+    -fx-max-width: 30px;
+    -fx-max-height: 30px;
+    -fx-min-width: 30px;
+    -fx-min-height: 30px;
+    -fx-alignment: center;
+}
+
+.min-btn:hover {
+	-fx-background-color: #e2e2e2;
+}

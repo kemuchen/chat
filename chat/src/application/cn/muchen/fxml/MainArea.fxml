@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.FlowPane?>
+<?import application.cn.muchen.customecontrol.title.TitleControl?>
+<?import javafx.scene.layout.*?>
+
+<FlowPane fx:controller="application.cn.muchen.controller.MainAreaController"
+	xmlns:fx="http://javafx.com/fxml" minHeight="550" maxWidth="300" minWidth="250"
+	stylesheets="@/application/cn/muchen/css/mainarea.css">
+	<!-- close and min btn -->
+	<HBox minWidth="300" spacing="0" alignment="TOP_RIGHT">
+		<TitleControl></TitleControl>
+	</HBox>
+</FlowPane>

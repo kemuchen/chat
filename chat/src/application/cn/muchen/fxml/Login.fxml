@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--导入类 -->
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.effect.DropShadow?>
+<?import application.cn.muchen.customecontrol.title.TitleControl?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.GridPane?>
+
+<!-- 配置登录控制器 -->
+<FlowPane
+	fx:controller="application.cn.muchen.controller.LoginController"
+	xmlns:fx="http://javafx.com/fxml" minHeight="350" maxHeight="350" maxWidth="420" minWidth="420"
+	stylesheets="@/application/cn/muchen/css/login.css">
+	
+	<!-- close and min btn -->
+	<HBox minWidth="420" styleClass="login-top" spacing="0" alignment="TOP_RIGHT">
+		<TitleControl></TitleControl>
+	</HBox>
+	
+	<!-- photo -->
+	<GridPane xmlns:fx="http://javafx.com/fxml"  styleClass="photo-grid" vgap="10">
+		<HBox styleClass="photo-hbox">
+			<ImageView>
+				<Image backgroundLoading="true" url="@/application/cn/muchen/images/face.jpg"/>
+				<fitWidth>60</fitWidth>
+				<fitHeight>60</fitHeight>
+				<effect>
+		            <DropShadow>
+		                <radius>5</radius>
+		                <offsetY>2.0</offsetY>
+		            </DropShadow>
+		        </effect>
+				<clip>
+				    <Circle fill="aqua" centerX="30" centerY="30">
+				         <radius>30</radius>
+				     </Circle>
+				</clip>
+			</ImageView>
+		</HBox>
+	</GridPane>
+	
+	<GridPane xmlns:fx="http://javafx.com/fxml" styleClass="login-form" vgap="10">
+		<!-- username input -->
+		<HBox GridPane.columnIndex="0" GridPane.rowIndex="0" alignment="BASELINE_CENTER">
+			<TextField fx:id="username" minWidth="260"/>
+		</HBox>
+		
+		<!-- password input -->
+		<HBox GridPane.columnIndex="0" GridPane.rowIndex="1" alignment="BASELINE_CENTER">
+			<PasswordField fx:id="password" minWidth="260"/>
+		</HBox>
+		
+		<!-- remember me -->
+		<HBox GridPane.columnIndex="0" GridPane.rowIndex="2" alignment="BASELINE_CENTER">
+			<CheckBox alignment="center"
+				onMouseClicked="#handleSelectAutoLogin" fx:id="autoLogin">自动登录</CheckBox>
+			<CheckBox alignment="center"
+				onMouseClicked="#handleRememberPassword" fx:id="rememberPassword">记住密码</CheckBox>
+			<Hyperlink>找回密码</Hyperlink>
+		</HBox>
+	
+		<HBox GridPane.columnIndex="0" GridPane.rowIndex="3" alignment="BASELINE_CENTER">
+			<Button text="登录" styleClass="login-button" onAction="#handleSubmitButtonAction" minWidth="260"/>
+		</HBox>
+	</GridPane>
+</FlowPane>
+

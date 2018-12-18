@@ -1,0 +1,62 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.root {
+	-fx-background-color: #FFFFFF;
+	-fx-background-radius: 10;
+}
+
+.text-field {
+	-fx-font-size: 12pt;
+    -fx-font-family: "Segoe UI Semibold";
+}
+
+.login-button {
+    -fx-padding: 10 105 10 105;   
+    -fx-border-width: 2;
+    -fx-text-fill: #ffffff;
+    -fx-background-radius: 5;
+    -fx-background-color: #00BFFF;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 12pt;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+.check-box {
+	-fx-text-fill: #c2c2c2;
+	-fx-font-size: 10pt;
+}
+
+.hyperlink {
+	-fx-text-fill: #c2c2c2;
+	-fx-font-size: 10pt;
+}
+
+.photo-grid {
+	-fx-padding: 0 0 15 0;
+	-fx-max-height: 60;
+	-fx-max-width: 420;
+	-fx-min-width: 420;
+	-fx-alignment: center;
+	-fx-background-color: linear-gradient(to right, #4876FF, #48D1CC);
+}
+
+.photo-hbox {
+	-fx-padding: 15 0 0 0;
+}
+
+.photoImage {
+	-fx-border-radius: 60;
+}
+
+.login-top {
+	-fx-min-height: 30;
+	-fx-max-height: 30;
+	-fx-background-color: linear-gradient(to right, #4876FF, #48D1CC);
+}
+
+.login-form {
+	-fx-min-height: 180;
+	-fx-max-width: 420;
+	-fx-min-width: 420;
+	-fx-alignment: center;
+	-fx-padding: 15 0 0 0;
+}
